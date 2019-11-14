@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!DOCTYPE lista_de_notas [
+	<!ELEMENT lista_de_notas (nota)>
+	<!ELEMENT nota (para,de,titulo,contenido)>
+	<!ATTLIST nota dia CDATA #REQUIRED>
+	<!ATTLIST nota hora CDATA #REQUIRED>
+	<!ELEMENT para (#PCDATA)>
+	<!ELEMENT de (#PCDATA)>
+	<!ELEMENT titulo (#PCDATA)>
+	<!ELEMENT contenido (#PCDATA)>
+]>

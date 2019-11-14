@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura [
+	<!ELEMENT factura (datosFactura,datosCliente,concepto,totales)>
+		<!ATTLIST factura numero CDATA #REQUIRED>
+		<!ATTLIST factura pedido CDATA #REQUIRED>
+		<!ELEMENT datosFactura (emisor,direccion,localidad,cif,telefono,fax,fecha,formpago)>
+		<!ELEMENT datosCliente (nombre,dircenvio,poblacion,provincia)>
+		<!ELEMENT concepto (concp+)>
+			<!ELEMENT concp (ref,descripcion,cant,precio,iva,importe)>
+		<!ELEMENT totales (baseimp,porcentiva,cuotaiva,totaoFac)>
+]>
