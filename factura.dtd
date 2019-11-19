@@ -4,8 +4,31 @@
 		<!ATTLIST factura numero CDATA #REQUIRED>
 		<!ATTLIST factura pedido CDATA #REQUIRED>
 		<!ELEMENT datosFactura (emisor,direccion,localidad,cif,telefono,fax,fecha,formpago)>
+			<!ELEMENT emisor (#PCDATA)>
+			<!ELEMENT dirección (#PCDATA)>
+			<!ELEMENT localidad (#PCDATA)>
+			<!ELEMENT cif (#PCDATA)>
+			<!ELEMENT telefono (#PCDATA)>
+			<!ELEMENT fax (#PCDATA)>
+			<!ELEMENT fecha (#PCDATA)>
+			<!ELEMENT formpago (#PCDATA)>
 		<!ELEMENT datosCliente (nombre,dircenvio,poblacion,provincia)>
+			<!ELEMENT nombre (#PCDATA)>
+			<!ATTLIST datosCliente nombre CDATA #REQUIRED>
+			<!ELEMENT dircenvio (#PCDATA)>
+			<!ELEMENT poblacion (#PCDATA)>
+			<!ELEMENT provincia (#PCDATA)>
 		<!ELEMENT concepto (concp+)>
 			<!ELEMENT concp (ref,descripcion,cant,precio,iva,importe)>
+				<!ELEMENT ref (#PCDATA)>
+				<!ELEMENT descripcion (#PCDATA)>
+				<!ELEMENT cant (#PCDATA)>
+				<!ELEMENT precio (#PCDATA)>
+				<!ELEMENT iva (#PCDATA)>
+				<!ELEMENT importe (#PCDATA)>
 		<!ELEMENT totales (baseimp,porcentiva,cuotaiva,totaoFac)>
+			<!ELEMENT baseimp (#PCDATA)>
+			<!ELEMENT porcentiva (#PCDATA)>
+			<!ELEMENT cuotaiva (#PCDATA)>
+			<!ELEMENT totaoFac (#PCDATA)>
 ]>
