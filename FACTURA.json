@@ -21,7 +21,11 @@
       "provincia": "Madrid"
    }],
    "concepto": [{
+<<<<<<< HEAD
       "concp": [{
+=======
+      "concp1": [{
+>>>>>>> 2430f132649413aeb5bc3e332015370948668505
          "ref": "MII93000F/8",
          "descripcion": "MICRO PENTIUM IV 3000MHZ FB800",
          "cant": "1",
