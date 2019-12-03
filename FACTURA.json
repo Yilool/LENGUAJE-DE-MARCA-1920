@@ -1,0 +1,63 @@
+"factura"[{
+   "numero": "999",
+   "pedido": "731",
+   "datosFactura": [{
+      "emisor": "Equipos Digitales S.L.",
+      "direccion": "Av. Valladolid",
+      "localidad": "Madrid(28015)",
+      "cif": "Q-9876543",
+      "telefono": "917776688",
+      "fax": "917776699",
+      "fecha": "12-01-2005",
+      "formpago": "EFECTIVO"
+   }],
+   "datosCliente": [{
+      "nombre": [{
+         "numeroC": "879",
+         "text": "Darío Bueno Gutiérrez"
+      }],
+      "dircenvio": "AV. Oporto nº7 4ºd",
+      "poblacion": "Madrid(28043)",
+      "provincia": "Madrid"
+   }],
+   "concepto": [{
+      "concp": [{
+         "ref": "MII93000F/8",
+         "descripcion": "MICRO PENTIUM IV 3000MHZ FB800",
+         "cant": "1",
+         "precio": "230 eur",
+         "iva": "16.0",
+         "importe": "266.80 eur"
+      }],
+      "concp": [{
+         "ref": "MB8QDIP4",
+         "descripcion": "PLACA BASE QDI P4",
+         "cant": "1",
+         "precio": "180 eur",
+         "iva": "16.0",
+         "importe": "208,80 eur"
+      }],
+      "concp": [{
+         "ref": "MEDD512M32",
+         "descripcion": "DIMM DDR 512MB 3200",
+         "cant": "2",
+         "precio": "40 eur",
+         "iva": "16.0",
+         "importe": "92,80 eur"
+      }],
+      "concp": [{
+         "ref": "HD250GSA7",
+         "descripcion": "DISCO DURO 250GB S-ATA 7200",
+         "cant": "4",
+         "precio": "120 eur",
+         "iva": "16.0",
+         "importe": "556,80 eur"
+      }]
+   }],
+   "totales": [{
+      "baseimp": "970.00 eur",
+      "pocentiva": "16.0",
+      "cuotaiva": "155.20",
+      "totaoFac": "1125.20"
+   }]
+}]

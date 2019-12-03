@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+	<xs:element name="factura">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="datosFacrura">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="emisor" type="xs:string"/>
+							<xs:element name="direccion" type="xs:string"/>
+							<xs:element name="localidad" type="xs:string"/>
+							<xs:element name="cif" type="xs:string"/>
+							<xs:element name="telefono" type="xs:integer"/>
+							<xs:element name="fax" type="xs:integer"/>
+							<xs:element name="fecha" type="xs:date"/>
+							<xs:element name="formpago" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="datosCliente">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nombre" type="xs:string">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:atribute name="numeroC" type="integer"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="dircenvio" type="xs:string"/>
+							<xs:element name="poblacion" type="xs:string"/>
+							<xs:element name="provincia" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="concepto">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="concp">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ref" type="xs:string"/>
+										<xs:element name="descripcion" type="xs:string"/>
+										<xs:element name="cant" type="xs:integer"/>
+										<xs:element name="precio" type="xs:decimal"/>
+										<xs:element name="iva" type="xs:integer"/>
+										<xs:element name="importe" type="xs:integer"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="totales">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="baseimp" type="xs:decimal"/>
+							<xs:element name="pocentiva" type="xs:integer"/>
+							<xs:element name="cuotaiva" type="xs:decimal"/>
+							<xs:element name="tataoFac" type="xs:decimal"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:atribute name="numero" type="integer"/>
+			<xs:atribute name="pedido" type="integer"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

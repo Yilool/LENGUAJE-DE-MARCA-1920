@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE receta SYSTEM "/home/estudiante/Escritorio/LENGUAJE DE MARCA/basDTD.dtd">
+
+<receta>
+	<titulo>...</titulo>
+	<ingredientes>...</ingredientes>
+	<procedimiento>...</procedimiento>
+</receta>
+<!--cambiar el element por doctype y Primera receta cambiarlo de lugar-->

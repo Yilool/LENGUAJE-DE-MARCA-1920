@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<!DOCTYPE informe [
+	<!ELEMENT informe (cabecera,cuerpo)>
+	<!ELEMENT cabecera (titulo)>
+	<!ELEMENT titulo (#PCDATA)>
+	<!ELEMENT cuerpo (descripcion,fInforme,zona*)>
+	<!ELEMENT descripcion (#PCDATA)>
+	<!ELEMENT fInforme (#PCDATA)>
+	<!ELEMENT zona (librosVendido)>
+	<!ATTLIST zona region CDATA #REQUIRED>
+	<!ELEMENT librosVendido (#PCDATA)>
+	<!ATTLIST librosVendido trimestre CDATA #REQUIRED>
+]>
+
+<informe>
+	<cabecera>
+		<titulo>Ediciones Aranda Informe regional de ventas</titulo>
+	</cabecera>
+	<cuerpo>
+		<descripcion>informe de ventas para las regiones Norte,Centro y Sur</descripcion>
+		<fInforme>30/12/2009</fInforme>
+		<zona region="Norte">
+			<librosVendido trimestre="1">24000</librosVendido>
+			<librosVendido trimestre="2">38600</librosVendido>
+			<librosVendido trimestre="3">NO_INFO</librosVendido>
+			<librosVendido trimestre="4">NO_INFO</librosVendido>
+		</zona>
+		<zona region="Centro">
+			<librosVendido trimestre="1">NO_INFO</librosVendido>
+			<librosVendido trimestre="2">16080</librosVendido>
+			<librosVendido trimestre="3">25000</librosVendido>
+			<librosVendido trimestre="4">29000</librosVendido>
+		</zona>
+		<zona region="Sur">
+			<librosVendido trimestre="1">27000</librosVendido>
+			<librosVendido trimestre="2">31400</librosVendido>
+			<librosVendido trimestre="3">40100</librosVendido>
+			<librosVendido trimestre="4">30000</librosVendido>
+		</zona>
+	</cuerpo>
+</informe>
